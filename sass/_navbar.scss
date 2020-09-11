@@ -1,0 +1,60 @@
+.navbar {
+    width: 100%;
+    height: 60px;
+    /* Line 1 */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 100%;
+    border: 1px solid #E2E2E2;
+    transform: rotate(0.14deg);
+
+    &__logo {
+        /* Rectangle 3 */
+        position: absolute; /* neden absolt*/
+        width: 150px;
+        height: 30px;
+        left: 15px;
+        top: 15px;
+        background: #C4C4C4;
+    }
+    &__right {
+        &--login {
+            position: absolute;
+            right: 150px;
+            top: 22px;
+            width: 35px;
+            height: 16px;            
+            font-family: $secondaryFontFamily;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 16px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        &--register {
+            position: absolute;
+            right: 60px;
+            top: 23px;
+
+            width: 52px;
+            height: 16px;            
+            font-family: $secondaryFontFamily;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 16px;
+            color: #FF0000;
+            text-decoration: none;
+            
+        }
+    }
+
+
+
+
+
+}
+

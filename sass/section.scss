@@ -1,0 +1,73 @@
+.hero {
+    &__head {
+        /* JOIN OUR BEST CLUB */
+        position: absolute; /*neden */
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 150px auto;
+        
+        font-family: $primaryFontFamily;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 81px;
+        
+        color: $primaryTextColor;
+         & span {
+            color: #FF0000;
+        }
+    }
+    &__box {
+    position: absolute;
+    top: 62%;
+    left: 55%;
+    right: 15%;
+
+    width: 350px;
+    height: 180px;
+    background: $primaryTextColor;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    &--text {
+        position: absolute;
+        width: 219;
+        height: 80px;
+        margin: 25px 50px;
+
+        font-family: $secondaryFontFamily;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 16px;
+        /* or 67% */
+          color: $secondaryTextColor;
+          & li {
+            list-style-type: circle;
+            padding: 13px 15px;
+          }
+      }
+
+    }
+}
+
+@media only screen and (max-width: 702px) {
+    .hero {
+      &__head {
+        font-size: 55px;
+        line-height: 54px;
+        left: 15%;
+        width: 70%;
+      }
+
+      &__box {
+        margin-left: auto;
+        margin-right: auto;
+        left: 20%;
+        
+      }
+    }
+  }
+
